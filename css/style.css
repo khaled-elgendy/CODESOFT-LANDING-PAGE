@@ -1,0 +1,150 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  position: relative;
+  
+}
+body{
+  background: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)),url(../images/backgrond.webp);
+  background-position:center;
+  background-size:cover;
+  height: 450px;
+  
+}
+.img-header{
+  width: 70px;
+  height: 50px;
+}
+.LIST1 li{
+  list-style-type: none;
+  display:inline-block;
+  margin: 15PX;
+  font-size: 18PX;
+  font-family: monospace;
+  color: white;
+  
+  
+
+}
+.LIST1{
+  float:right;
+  margin-right: 100px;
+}
+.LIST1 li:hover{
+  color: red;
+  transition: 1s;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.content .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+.content .title h1{
+  color:rgba(225,225,225,0.2);
+  background: url(../images/fire.jpg) repeat-x;
+  -webkit-background-clip: text;
+  background-size: center;
+  animation: fire 5s linear infinite;
+  
+}
+@keyframes fire {
+  0%{
+    background-position:left 0px top 25px;
+  }
+  50%{
+    background-position:left 130px top -35px;
+  }
+  
+  100%{
+    background-position:left 250px top 0px;
+  }
+}
+.content .title img{
+  width: 80px;
+  transform: rotate(20eg);
+}
+.content .text{
+  text-align: center;
+}
+.content .text h4{
+  color: white;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.content .text button{
+ color: white;
+ background-color: red;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.4s;
+  box-shadow: 1px 1px 10px 1px  rgb(255, 38, 0);
+ 
+}
+.content .text button:hover{
+  background-color: white;
+  color: red;
+}
+.search-bar{
+  float:left;
+  margin-left: 130px;
+margin-top: -40px;
+position: absolute;
+}
+#search-input {
+  margin-right:10px;
+  border-color: red;
+  border-radius: 3px;
+}
+#search-button{
+  margin-right:100px;
+  border-color: red;
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+}
+#search-button:hover{
+  color: red;
+  background-color: white;
+  border: none;
+}
+.footer img{
+  width: 100%;
+  height: 100px;
+  bottom: 100%;
+  margin-top: 450px;
+}
+.i1{
+  font-size: 30px;
+  margin: 10px;
+  color: rgb(0, 47, 255);
+}
+.i2{
+  font-size: 30px;
+  margin: 10px;
+  color: rgb(226, 43, 67);
+}
+.i3{
+  font-size: 30px;
+  margin: 10px;
+  color: rgb(0, 174, 255);
+}
